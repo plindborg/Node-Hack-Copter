@@ -10,7 +10,7 @@ var index = 0;
 // Get image data from the drone
 var pngStream = client.createPngStream();
 //pngStream.on('data', console.log);
-var face_cascade = new cv.CascadeClassifier("haarcascade_frontalface_alt.xml");
+var face_cascade = new cv.CascadeClassifier("data/haarcascade_frontalface_alt.xml");
 
 
 pngStream.on('data', function(image){
